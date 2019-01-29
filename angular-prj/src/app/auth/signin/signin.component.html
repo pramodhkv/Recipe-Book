@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col md-offset-2">
+    <form (ngSubmit)="onSignin(signinForm)" #signinForm="ngForm">
+      <div class="form-group">
+        <label for="email">Mail</label>
+        <input type="email" class="form-control" ngModel id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" ngModel 
+        id="password" name="password" [minLength]="6">
+      </div>
+      <button class="btn btn-primary" type="submit">Sign in</button>
+    </form>
+  </div>
+</div>
